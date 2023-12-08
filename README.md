@@ -1,0 +1,16 @@
+# daily_lou
+
+Video link: https://youtu.be/T2SFWjNu7Uc
+
+Because it costs money to put the app on the app store, the user will have to run a simulator on their computer after downloading the code files. Unfortunately, this requires multiple steps and downloads. First, make sure to download daily_lou. From there, the user will have to download Flutter, Xcode, and possibly more components depending on how updated their computer is. Disclaimer: Xcode can only be downloaded if owned by a Mac. If the user does not have a Mac, they unfortunately cannot currently access the app. If the user does have a Mac, follow these instructions:
+
+First, the user must download Flutter. With a mac computer, the user must have three components to install and run Flutter successfully: “Operating Systems: macOS, version 10.14 (Mojave) or later; Disk Space: 2.8 GB (does not include disk space for IDE/tools); Tools: Flutter uses git for installation and upgrade. We recommend installing Xcode, which includes git, but the user can also install git separately” - Flutter. If the user does not have any or all of those components, take a moment and download them. The user then needs to install Flutter SDK. The files can be found here: https://docs.flutter.dev/get-started/install/macos under the title “Get the Flutter SDK” - there are two options; the user must decide which one works with their computer. Follow the next two steps under that link to successfully install Flutter SDK. Additionally, install CocoaPods by running “sudo gem install cocoapods” in the user's terminal. Once the user has followed those steps, run “flutter doctor” in their terminal. This will return a message with a checklist of what the user’s computer has and still needs to configure. Follow the instructions given to finish up the installation - these steps will vary for each user depending on their setup. Important: Do not worry about the Android items - these are not needed to run the app with Xcode.
+
+After the user has successfully followed the previous steps, they must set up Xcode. Once Xcode is installed from the app store, run:
+-'sudo xcode-select -s /Applications/Xcode.app/Contents/Developer'
+-'sudo xcodebuild -runFirstLaunch'
+To sign the XCode agreement, run “sudo xcodebuild -license” in the user's terminal. 
+
+Now the user can create the simulator to run the app. In the terminal run “flutter emulators --launch apple_ios_simulator” This should open up an ios simulator. From there, run “flutter run” in the terminal. This should open the app in the simulator. To do a hard restart in the app the user can run “R” but the app should already be ready to use.
+
+The app is fairly simple (the whole point of it!). It is a news app that fetches random headlines from news sources that users can interact with as they please. If the user is interested in an article, click on the hyperlinked article title and it will take the user to the article. When done with the article, click “done” in the top left corner, and this will take the user back to the app. If none of the articles interest the user, refresh the page by scrolling up at the top of the page (as one would with a social media site). The app is meant to be extremely simple. Use it for a few minutes a day and the user will be pretty up to date with current events. Enjoy!
